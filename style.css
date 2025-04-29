@@ -1,0 +1,147 @@
+/* === Reset Dasar === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: #F9F9F9;
+  line-height: 1.75;
+  letter-spacing: 0;
+}
+
+/* === Header === */
+header {
+  background: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #333333;
+}
+
+/* === Navigation === */
+#navigation {
+  margin-top: 10px;
+}
+
+#navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#navigation ul li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #52796F;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s;
+}
+
+#navigation ul li a:hover {
+  color: #354F52;
+}
+
+/* === Main Content === */
+#main {
+  padding: 40px 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* === Sidebar (Jika Digunakan) === */
+#sidebar {
+  padding: 20px;
+  background: #FFFFFF;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 40px;
+}
+
+/* === Footer === */
+footer {
+  margin-top: 60px;
+  padding: 20px 0;
+  background-color: #E0E0E0;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* === Links === */
+a {
+  color: #52796F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #354F52;
+}
+
+/* === Post Title === */
+.post-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* === Post Content === */
+.post-content {
+  margin-bottom: 40px;
+}
+
+.post-content p {
+  margin-bottom: 20px;
+}
+
+/* === Blockquote === */
+blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-left: 5px solid #52796F;
+  background-color: #f0f0f0;
+  font-style: italic;
+  color: #555;
+}
+
+/* === Image Styling === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  #navigation ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
